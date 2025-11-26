@@ -32,8 +32,8 @@ def run_query(sql: str) -> pd.DataFrame:
     """Open a fresh MySQL connection, run query, return DataFrame."""
     conn = mysql.connector.connect(
         host="localhost",
-        user="root",
-        password="0998",       # 🔁 change if your password is different
+        user="your User name",
+        password="your DB PWD",       # 🔁 change if your password is different
         database="neo_data"
     )
     df = pd.read_sql(sql, conn)
